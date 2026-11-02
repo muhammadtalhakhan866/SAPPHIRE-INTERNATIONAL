@@ -1,0 +1,11 @@
+﻿# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.claude/
+
+# Vercel
+.vercel/
+
+# Raw material from the company-profile docx (kept locally, not published)
+assets/source/
