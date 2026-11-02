@@ -9,3 +9,4 @@ desktop.ini
 
 # Raw material from the company-profile docx (kept locally, not published)
 assets/source/
+.vercel
