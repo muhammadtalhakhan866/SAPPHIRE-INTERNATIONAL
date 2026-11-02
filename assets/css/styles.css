@@ -270,7 +270,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Awards ---------- */
 .award { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
-.cert { position: relative; border-radius: 20px; background: #fff; padding: 14px; box-shadow: var(--shadow-lg); transform: rotate(-2.2deg); transition: transform .4s; }
+.cert { margin: 0; position: relative; border-radius: 20px; background: #fff; padding: 14px; box-shadow: var(--shadow-lg); transform: rotate(-2.2deg); transition: transform .4s; }
 .cert:hover { transform: rotate(0) scale(1.02); }
 .cert img { border-radius: 10px; width: 100%; }
 .cert::after { content: "2023"; position: absolute; top: -18px; right: -14px; font: 700 .85rem var(--font-body); letter-spacing: .08em; background: linear-gradient(135deg, var(--orange), #c4502a); color: #fff; padding: .45rem .9rem; border-radius: 999px; box-shadow: 0 10px 20px -8px rgba(196, 80, 42, .7); }
@@ -574,3 +574,6 @@ html.leaving body { opacity: 0; transition: opacity .25s ease; animation: none; 
   .progress { display: none; }
 }
 @media (max-width: 620px) { .marquee-track span { font-size: 1.3rem; } .totop { right: 18px; bottom: 84px; } }
+/* Certificate is a portrait A4 scan */
+.award .cert { max-width: 430px; margin-inline: auto; }
+.cert img { aspect-ratio: 1284 / 1797; height: auto; }
